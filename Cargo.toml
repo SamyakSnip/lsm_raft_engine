@@ -1,0 +1,15 @@
+[package]
+name = "lsm_raft_engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crc32fast = "1.5.2"
+thiserror = "2.0.21"
+
+[dev-dependencies]
+criterion = "0.8.2"
+
+[[bench]]
+name = "engine_bench"
+harness = false
